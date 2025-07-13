@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{a001fcaf-2399-4412-a986-3e56ae0c15d4}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\ImGui-master\backends\imgui_impl_opengl3.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\ImGui-master\backends\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\ImGui-master\imconfig.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\ImGui-master\imgui.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\ImGui-master\imgui_internal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\ImGui-master\imstb_rectpack.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\ImGui-master\imstb_textedit.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\ImGui-master\imstb_truetype.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)actors.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)camera.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)colliders.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)common.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)controls.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)debug_log.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)directions2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)editor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)firearm.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)fog.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Game.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)gui.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)gui2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)gui_element_3d.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IInput.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IWindow.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)maths.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)model.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ogl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)path.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)physics.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)resources.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)scene_graph.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)sgnode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)skeletal_model.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)state_machine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)health.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)inventory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)light.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)object_pool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)perlin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ray_caster.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)scene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)settings.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)skybox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)static_model.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)texture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)transform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\ImGui-master\backends\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\ImGui-master\imgui.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\ImGui-master\imgui_demo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\ImGui-master\imgui_draw.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\ImGui-master\imgui_tables.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\ImGui-master\imgui_widgets.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)actors.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)camera.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)colliders.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)debug_log.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)editor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)firearm.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)fog.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Game.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)gui.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)gui2.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)gui_element_3d.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)health.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)inventory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)light.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)maths.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)model.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ogl.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)path.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)perlin.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)physics.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ray_caster.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)resources.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)scene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)scene_graph.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)settings.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)sgnode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)skeletal_model.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)skybox.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)static_model.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)texture.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)transform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\brian_01.mtl" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\brian_02.mtl" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\brian_03.mtl" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\camo_scout\camo_scout.dae" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\camo_scout\camo_scout.wanim" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Gunner\Gunner.mtl" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\MGS_Brian.mtl" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\Rifle Idle.dae" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\Running.dae" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\Snake.dae" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\SnakewAnims.wanim" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\vampire\dancing_vampire.dae" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Vepr_Hunter3\vepr_hunter.dae" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\setup.sh" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\debug_line.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\debug_line.vert" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\fog.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\fog.vert" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\fog_with_light.vert">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\fog_with_light.frag">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\lighting_maps_light.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\lighting_maps_light.vert" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\lighting_maps_object.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\lighting_maps_object.vert" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\light_casters_light.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\light_casters_light.vert" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\light_casters_object.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\light_casters_object.vert" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\light_casters_spotlight.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\light_casters_spotlight.vert" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\main.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\main.vert" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\skeletal.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\skeletal.vert" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\skybox.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\skybox.vert" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\textured.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\textured.vert" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\ui_element.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\ui_element.vert" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\ui_wireframe.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\ui_wireframe.vert" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\unified_shader.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\unified_shader.vert" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\wireframe.frag" />
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Shaders\wireframe.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="$(MSBuildThisFileDirectory)..\Assets\Models\brian_01.obj">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </Object>
+    <Object Include="$(MSBuildThisFileDirectory)..\Assets\Models\brian_02.obj">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+    </Object>
+    <Object Include="$(MSBuildThisFileDirectory)..\Assets\Models\brian_03.obj">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+    </Object>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\Gunner\Gunner.obj">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\MGS_Brian.obj">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\brian_01.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\brian_01_em.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\brian_02.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\brian_02_em.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\brian_03.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\brian_03_em.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\camo_scout\textures\Arms.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\camo_scout\textures\BootsBag.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\camo_scout\textures\FaceBeltCanteen.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\camo_scout\textures\GlovesHat.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\camo_scout\textures\Legs2.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\camo_scout\textures\LegsMask.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\camo_scout\textures\Pocket.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\camo_scout\textures\Pouches.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\camo_scout\textures\Torso1.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\camo_scout\textures\Torso2.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\camo_scout\textures\Waist.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Gunner\pain.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Gunner\skin.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m00_con_newf.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m00_con_news.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m00_pla_con4t.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m00_pla_cwall1.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m00_pla_cwall2.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m00_pla_flo1.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m00_pla_flo13msk.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m00_pla_tnkf1.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m00_pla_tnkt.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m00_pla_undersea_1.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m00_pla_wall4.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m02_hung_01msk.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m4n_b2_00.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m4n_b2_01.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\m4n_b2_02.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\MGS_Brian\tiyo.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0645_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0646_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0655_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0656_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0657_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0659_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0668_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0670_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0671_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0672_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0675_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0676_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0677_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0678_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0679_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0691_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0692_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0693_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0694_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0695_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0696_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Snake\textures\Tex_0697_0.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\vampire\textures\Vampire_diffuse.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\vampire\textures\Vampire_emission.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\vampire\textures\Vampire_normal.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\vampire\textures\Vampire_specular.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Models\Vepr_Hunter3\Scene_-_Root_baseColor.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\cloudy_sky1\nx.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\cloudy_sky1\ny.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\cloudy_sky1\nz.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\cloudy_sky1\px.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\cloudy_sky1\py.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\cloudy_sky1\pz.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\night_sky1\nx.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\night_sky1\ny.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\night_sky1\nz.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\night_sky1\px.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\night_sky1\py.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\night_sky1\pz.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\night_sky2\nx.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\night_sky2\ny.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\night_sky2\nz.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\night_sky2\px.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\night_sky2\py.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Skyboxes\night_sky2\pz.png" />
+    <Image Include="$(MSBuildThisFileDirectory)..\Assets\Textures\Harvey2.jpg" />
+  </ItemGroup>
+</Project>
